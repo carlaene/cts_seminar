@@ -1,0 +1,13 @@
+Code Review
+
+1. Conventii de nume
+numele clasei nu sugereaza scopul clasei
+numele functiei nu este ok
+numele argumentelor fct nu sunt relevante
+variabila rezultat trb redenumita
+valoare este o denumire generica, trb redenumita
+
++ valorile hardcodate (magic numbers) 1,2,3,4
+-eliminam valorile predefinite din functie
+
+datele de intrare nu sunt validate
