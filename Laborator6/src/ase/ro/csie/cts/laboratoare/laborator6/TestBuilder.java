@@ -9,6 +9,12 @@ public class TestBuilder {
 
 		//Supererou superErou1= new Supererou("Superman",100,false,false,new Arma(),null, new Laser(), null);
 		Supererou superman= new Supererou.SuperErouBuilder("Superman",100).build();
+		Supererou joker = new Supererou.SuperErouBuilder("Joker",200)
+				.esteNegativ()
+				.esteRanit()
+				.setArmaDreapta(new Arma())
+				.build();
+		
 	}
 
 }
