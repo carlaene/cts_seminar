@@ -24,9 +24,14 @@ public class ContBancar implements Payable{
 		this.procentRata = rata;
 		this.tipCont = tipCont;
 	}
+	
 	public double getValoareImprumut() {
+		System.out.println("Valoarea imprumutului este "+this.valoareImprumut);
 		return valoareImprumut;
 	}
+	
+
+	
 	public void setValoareImprumut(double valoareImprumut) throws ExceptieValoareImprumutNegativa {
 		if(valoareImprumut>0)
 		{
@@ -43,6 +48,7 @@ public class ContBancar implements Payable{
 		return procentRata;
 	}
 	public void setRata(double rata) {
+		System.out.println("Rata este "+this.procentRata);
 		this.procentRata = rata;
 	}
 	@Override
@@ -51,11 +57,10 @@ public class ContBancar implements Payable{
 				+ ", tipCont=" + tipCont + "]";
 	}
 	
-	@Override
-	public double RataLunara() {
-		// TODO Auto-generated method stub
-		return valoareImprumut * procentRata;
-	}
+public void raport() {
+	int vb=10;
+	System.out.println("Acesta este un cont.");
+}
 	
 	public static double calculeazaComisionTotal(ContBancar[] conturi){
 		double comisionTotal=0.0;
@@ -68,6 +73,13 @@ public class ContBancar implements Payable{
 		}
 		return	comisionTotal;
 		}
+
+
+	@Override
+	public double rataLunara() {
+		// TODO Auto-generated method stub
+		return valoareImprumut*procentRata;
+	}
 	
 
 }
