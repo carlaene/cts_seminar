@@ -1,5 +1,5 @@
-package ro.ase.csie.cts.teme.tema1.rezolvare;
+package ro.ase.csie.cts.teme.tema1.rezolvare.interfete;
 
 public interface Payable {
-	public abstract void RataLunara();
+	public abstract double RataLunara();
 }
