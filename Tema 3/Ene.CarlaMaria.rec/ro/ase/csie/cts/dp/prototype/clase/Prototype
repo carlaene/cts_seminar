@@ -1,0 +1,12 @@
+Tema licenta: Aplicatie bancara
+Scenariu:
+Dorim sa cream 2 tipuri de carduri, in functie de vechimea clientului la aceasta banca. Deoarece cele 2 modele sunt destul de 
+complexe, generarea lor ar avea impact asupra timupului de executie. In plus, acelasi model este utilizat pentru multi clienti ai bancii.
+Astfel, vom clona un obiect si il vom reutiliza pentru toti clientii bancii care au acelasi model de card.
+Cream un obiect prototip 
+Avantaje:
+- cream rapid obiecte identice prin clonare
+- evitam apelul explicit al constructorului
+- putem construi o colectie de prototipuri utilizate pentru a genera obiecte noi
+Dezavantaje:
+- se formeaza shallow copy la crearea de obiecte cu aceleasi caractersitici

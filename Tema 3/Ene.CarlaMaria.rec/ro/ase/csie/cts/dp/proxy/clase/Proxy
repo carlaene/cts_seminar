@@ -1,0 +1,6 @@
+Tema licentei: Aplicatie bancara
+Daca un user incearca folosirea cardului si introduce pinul gresit de 3 ori, atunci cardul i se va bloca
+Definim o interfata in frameworkuri diferite
+- adaugam anumite permisiuni/realizam accesul la eventuale modificari ale obiectelor
+- permite accesul la anumite functionalitati
+- obiectele pot fi create doar atunci cand este nevoie, partajand o instanta intre mai mult clienti --> nivel optim de memorie

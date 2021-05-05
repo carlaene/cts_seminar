@@ -1,0 +1,13 @@
+Tema licenta: Aplicatie bancara
+Scenariu: Toate cardurile au in comun urmatoarele atribute: nume posesor, numar card si cvc, insa doar unele au anumite beneficii extra,
+cum ar fi accesul gratuit la unele sali de sport. Asadar, desi obiectele (de tip card) au unele atribute comune, o parte din starea lor variaza 
+(beneficiile corelate cu respectivul card) --> putem minimiza memoria ocupata prin partajarea atributelor fixe intre diferitele obiecte create
+Astfel, cand utilizam un proiect, reincarcam de fapt atributele variabile (benficiul optional de a avea gratuitate la salile de sport)
+intr-un obiect deja existent
+Avantaje:
+- se reduce memoria ocupata de obiecte, impartind intre obiecte partea de atribute comune
+- pentru partajarea obiectelor de tip Flyweight intre clienti si firele de executie, acestea trebuie sa fie imutabile
+Dezavantaje:
+- trebuie studiat care este partea variabila 
+- efecte vizibile doar atunci cand avem un numar mare de obiecte
+- nivelul de memorie redusa depinde de numarul de categorii de obiecte Flyweight

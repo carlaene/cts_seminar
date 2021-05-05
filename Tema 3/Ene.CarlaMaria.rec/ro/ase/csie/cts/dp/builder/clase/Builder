@@ -1,0 +1,10 @@
+Tema licentei: Aplicatie bancara
+Scenariu: Banca ofera carduri cu diferite facilitati, precum cont de RON, cont de EUR, verifica loialitatea si vechimea clientilor, dar ofera si 
+reduceri la diferite firme daca se plateste cu cardul respectiv. Aceste facilitati sunt adaugate doar daca se doreste acest lucru; de aceea, 
+folosim Builder.
+Avantaje:
+- obiectele complexe sunt create independent de partile componente, adica nu trebuie sa contina toate elementele, ci doar o parte
+- putem reprezenta diferit obiectele printr-o interfata comuna
+- algoritm flexibil
+Dezavantaje:
+- atunci cand cream obiecte, pot fi omise atribute

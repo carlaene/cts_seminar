@@ -1,0 +1,9 @@
+Tema licentei: Aplicatie bancara
+Scenariu: Trebuie sa utilizam impreuna doua clase (BankAccountActions-contine actiunile pe care le poate face un client in aolicatia sa bancara si BankClientInfo)
+ care nu au o interfata comuna, deci construim o interfata ce permite utilizarea lor in alt context: ClientInterface
+ Avantaje:
+ - clasele initiale nu trebuie modificate, modificandu-se doar contextul in care sunt utilizate
+ - este usor sa defenim adaptoare pentru orice context
+ Dezavantaje:
+ - adaptorul de clase are la baza adaptarea multipla, imposibil in Java --> folosim interfete si compunere
+ 

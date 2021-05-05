@@ -1,0 +1,11 @@
+Tema licenta: Aplicatie bancara
+Folosim Singleton pentru a avea un singur obiect de tipul clasei respective, adica nu putem elibera 2 carduri cu aceleasi credentiale
+Avantaje:
+- O clasa Singleton poate implementa o interfata sau extinde o alta clasa
+- permite o conexiune unica la baza de date
+- permite accesarea resurselor dispozitivelor mobile
+- Se deschide o unica instanta a unei aplicatii
+- cream obiectul atunci cand este necesar
+Dezavantaje:
+- daca folosim multi-threading, pot aparea probleme de sincronizare daca singleton-ul este partajat
+- poate afecta performanta aplicatiei daca este folosit excesiv

@@ -1,0 +1,14 @@
+Tema licenta: "Aplicatie bancara"
+Scenariu: gestiunea crearii diferitelor tipuri de carduri:  GOLD, SILVER,PLATINUM
+Folosim Factory Simple pentru a crea obiecte concrete dintr-o familie de obiecte
+In clasa CardFactory() este furnizat tipul cardului, care este un enum, si returneaza tipul concret de obiect conform acestui parametru
+Aceasta clasa explica procesul de creare a obiectelor 
+Avantaje:
+- foarte usor de implementat
+- crearea de view-uri pt GUI
+- existenta unei familii de obiecte intr-o aplicatie
+- avem o singura "fabrica", cu ajutorul careia obtinem mai multe tipuri de obiecte dintr-o anumita categorie
+- obiectele nu sunt create direct prin constructori, ci apeland metoda getCard()
+Dezavantaje:
+	- nu pot fi generate obiecte noi
+	- constructorii sunt privati si clasele nu pot fi extinse

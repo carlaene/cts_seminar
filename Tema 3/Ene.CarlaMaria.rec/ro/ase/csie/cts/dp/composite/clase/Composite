@@ -1,0 +1,13 @@
+Tema licentei: Aplicatie bancara
+Scenariu: Folosim COMPOSITE pentru a crea o structura arborescenta pe categorii
+Astfel, impartim clientii bancii in grupuri, asupra carora avem mai multe optiuni:
+-schimbarea administratorului responsabil de contul clientilor din acel grup
+-stergerea contului la banca respectiva
+-crearea unui cont/introducerea unui nou client intr-un anumit grup
+Asadar, cand alegem una din optiunile de mai sus asupra unui grup, acestea se realizeaza asupra tuturor clientilor din grupul respectiv
+ Avantaje:
+ - gestionam usor ierarhii de clase
+ - codul devine mai simplu deoarece obiectele din ierarhie sunt tratate unitar
+ - daca adaugam obiecte noi pornind de la interfata comuna, nu sunt ridicate probleme suplimentare
+ Dezavantaje:
+ - orice actiune am alege sa realizam asupra unui element din ierarhie, se realizeaza la toate elementele din acea ierarhie

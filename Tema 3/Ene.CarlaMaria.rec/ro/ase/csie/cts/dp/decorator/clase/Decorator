@@ -1,0 +1,17 @@
+Tema licenta: Aplicatie bancara
+Putem extinde un obiect prin aplicarea mai multor "decoratori" fara a modifica clasa de baza
+Scenariu: Un client este un obiect de tipul BankAccountActions, deci va avea cele 3 atribute specifice clasei. Insa, putem sa-l decoram cu 
+metode aditionale, niste actiuni pe care i le putem sau nu atribui clientului: getHigherMemberLevel() si penaltyPoints(int)
+Primul decorator se refera la posibilitatea avansarii clientului la un nivel de fidelitate superior pt a dispune de avantaje extra, in timp
+ce al doilea decorator se refera la posibilitatea acestuia de acumula puncte de penalizare din diverse motive
+
+
+Avantaje:
+- Extinderea dinamica a functionalitatii unui obiect
+- clasa mosteneste interfata specifica obiectului, deci decorarea obiectului este transparenta fata de utilizator
+- nu avem un numar maxim de decorari pe care le putem face
+Dezavantaje:
+- Un decorator nu este identic cu obiectul asupra caruia este aplicat
+- daca folosim abuziv acest design pattern, vom transforma codul in ceva foarte dificil de citit si inteles, fiind foarte mult obiecte
+identice, dar care se comporta diferit
+
