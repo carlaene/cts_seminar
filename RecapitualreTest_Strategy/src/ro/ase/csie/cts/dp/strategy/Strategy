@@ -1,0 +1,5 @@
+1. In functie de activitatea contului (numar achizitii lunare facute cu cardul, numar invitatii trimise,
+ suma maxima transferata prin intermediul cardului etc) clientii primesc puncte bonus. 
+Aceasta strategie este stabilita de departamentul de marketing a bancii si se modifica in functie de alte campanii, perioada anului, etc.
+Sa se gaseasca o solutie care sa permita:
+- modificarea strategiei de acordare a bonusului la runtime fara a modifica implementarea jocului
